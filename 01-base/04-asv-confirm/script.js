@@ -10,7 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+    var confirm="no";
 
-    // your code here
+    while (confirm!="yes") {
+
+        var age=prompt("Quel est votre âge ?");
+        var genre=prompt("Quel est votre genre  ?");
+
+        alert("Vous avez "+age+"années et êtes de genre "+genre);
+
+        confirm=prompt("Est-ce correct ? (y/n)");
+    }
 
 })();

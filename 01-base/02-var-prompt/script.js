@@ -11,6 +11,8 @@
 
 (function() {
 
-    // your code here
+    var x=prompt("Merci d'écrire votre nom");
+    
+    alert("Bonjour "+x);
 
 })();

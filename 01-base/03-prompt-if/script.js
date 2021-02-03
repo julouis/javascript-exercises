@@ -11,6 +11,12 @@
 
 (function() {
 
-  // your code here
+  var x=prompt("Do you want some cake? (y/n)");
+
+  if (x=="y") {
+    alert("The cake was a lie");
+  } else {
+    alert("More cake for me then");
+  }
 
 })();
