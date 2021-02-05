@@ -17,7 +17,7 @@
 
 		var date = new Date();
 
-		var getDay = date.getDay();
+		var getDate = date.getDate();
 		var getMonth = date.getMonth() + 1;
 		var getYear = date.getFullYear();
 
@@ -27,7 +27,7 @@
 			age = getYear - year;
 		}
 		if ((getMonth = month)) {
-			if (getDay >= day) {
+			if (getDate >= day) {
 				age = getYear - year;
 			}
 		} 

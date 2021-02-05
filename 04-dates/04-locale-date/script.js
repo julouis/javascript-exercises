@@ -13,6 +13,13 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
+    var date = new Date();
+
+    var displayDate=date.getTime();
+    console.log(date);
+
+    document.getElementById("target").innerHTML=date;
+
     // your code here
 
 })();
