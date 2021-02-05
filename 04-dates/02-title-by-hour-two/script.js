@@ -12,7 +12,24 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    var days = new Date();
+    var hour = days.getHours();
+    var minute = days.getMinutes();
 
+    if (minute < 10) {
+        minute=""+0+minute;
+    }
+
+    var time = ""+hour+minute;
+
+    console.log(""+hour+minute);
+
+
+    var message = "Hello"
+    if (time>1730) {
+        message= "Good Evening"
+    } 
+    document.getElementById("target").innerHTML = message;
     // your code here
 
 })();
