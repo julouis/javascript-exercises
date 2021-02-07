@@ -89,6 +89,14 @@
         },
     ];
 
+    document.getElementById("run").addEventListener("click", function () {
+        people.forEach(person => {
+            if (person.firstname=="Jean" && person.lastname=="Dupont") {
+                console.log(person.email);
+            }
+        });
+    })
+
     // your code here
 
 })();
