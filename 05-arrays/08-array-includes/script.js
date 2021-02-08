@@ -26,6 +26,17 @@
         "cherry",
     ];
 
+    var check="No";
+
+    document.getElementById("run").addEventListener("click",function () {
+        fruits.forEach(fruit => {
+            if (fruit=="apple") {
+                check="Yes";
+            }
+        });
+        console.log(check);
+    })
+
     // your code here
 
 })();

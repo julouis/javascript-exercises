@@ -91,14 +91,24 @@
 	var youngPeople = [];
 
 	document.getElementById("run").addEventListener("click", function () {
-		people.forEach((person) => {
+		/*people.forEach((person) => {
 			if (person.age > 18) {
 			youngPeople.push(person);
             
 			}
 			
-		});
-        console.log(people);
-        console.log(youngPeople);
+		}); */
+
+
+        var x=0;
+        for (i=0;i<people.length;i++) {
+            if (people[i].age>18) {
+                youngPeople[x]=people[i];
+                x++;
+            }
+        }
+
+        console.table(people);
+        console.table(youngPeople);
 	});
 })();
