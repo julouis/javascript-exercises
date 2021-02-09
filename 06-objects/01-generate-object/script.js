@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
+
+    var id = [
+        {
+            firstname: "Julien",
+            lastname: "Louis",
+            age: 28,
+            city: "Tilff",
+            country: "Belgium"
+        }
+    ]
+
+    document.getElementById("run").addEventListener("click",function () {
+
+        console.log(id[0])
+
+    })
+
     // your code here
 })();

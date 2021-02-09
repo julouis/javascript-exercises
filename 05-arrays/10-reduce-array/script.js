@@ -89,6 +89,19 @@
         },
     ];
 
+    var total=0;
+
+
+    function sum(total, currentValue) {
+        return total + currentValue.age;
+    }
+
+    document.getElementById("run").addEventListener("click",function() {
+        console.log(people.reduce(sum,0));
+        
+        
+    })
+   
     // your code here
 
 })();

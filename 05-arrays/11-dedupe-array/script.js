@@ -28,6 +28,18 @@
         "cerise",
     ];
 
+    var uniqueFruits = [];
+
+    document.getElementById("run").addEventListener("click", function () {
+        fruits.forEach(fruit => {
+            if (!uniqueFruits.includes(fruit)) {
+                uniqueFruits.push(fruit);
+            }
+        });
+        console.log(uniqueFruits);
+    })
+
+
     // your code here
 
 })();
