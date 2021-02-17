@@ -15,5 +15,29 @@
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
     }
+
+    class Cat extends Animal {
+        constructor (name, greeting) {
+            this.name=name;
+            this.greeting=" fait miou"
+        }
+    }
+
+    class Dog extends Animal {
+        constructor (name, greeting) {
+            this.name=name;
+            this.greeting=" fait waf"
+        }
+    }
+
+    var cat = new Cat("Jean le chat")
+    var dog = new Dog("Doge le doge")
+
+    document.getElementById("run").addEventListener("click", function() {
+
+       console.log(cat)
+
+    })
+
     // your code here
 })();

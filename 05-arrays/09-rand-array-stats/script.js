@@ -18,7 +18,6 @@
         for (i=0;i<10;i++) {
             var randomNumber = Math.floor(Math.random()*100+1);
             randomArray[i]= randomNumber;
-
             document.getElementById("n-"+(i+1)).innerHTML=randomArray[i];
 
             if (i==0) {
