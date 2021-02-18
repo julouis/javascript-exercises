@@ -13,4 +13,9 @@
 
     // your code here
 
+
+
+    document.querySelector('#target').innerHTML="test";
+    
+
 })();
