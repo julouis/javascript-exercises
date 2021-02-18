@@ -16,26 +16,30 @@
         }
     }
 
+
     class Cat extends Animal {
-        constructor (name, greeting) {
+        constructor(name, greeting) {
+            super(name,greeting);
             this.name=name;
-            this.greeting=" fait miou"
+            this.constructor.greeting="Hello";
         }
     }
 
     class Dog extends Animal {
-        constructor (name, greeting) {
+        constructor(name, greeting) {
+            super(name,greeting);
             this.name=name;
-            this.greeting=" fait waf"
+            this.constructor.greeting="Bonjour";
         }
     }
 
-    var cat = new Cat("Jean le chat")
-    var dog = new Dog("Doge le doge")
+    var cat = new Cat ("Jean le chat")
+    var dog = new Dog ("Doge le doge")
 
     document.getElementById("run").addEventListener("click", function() {
 
-       console.log(cat)
+       console.log(cat.sayHello())
+       console.log(dog.sayHello())
 
     })
 
