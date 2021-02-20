@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    var image = document.getElementById("source").getAttribute("data-image");
+
+    var imageNewLocation = document.getElementById("target").innerHTML = `<img src="${image}">` ;
+
+    imageNewLocation.src=image;
+
+    console.log(imageNewLocation)
+
+    // console.log(image.dataset.image); 
 
 })();
