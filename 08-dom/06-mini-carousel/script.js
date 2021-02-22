@@ -19,6 +19,16 @@
         "../../_shared/img/map.svg",
     ];
 
+    var button = document.getElementById("next");
+
+    button.onclick = function() {
+        var rand = Math.floor(Math.random()*5);
+        console.log(rand);
+
+        document.querySelector("img").src = gallery[rand];
+
+    }
+
     // your code here
 
 })();
