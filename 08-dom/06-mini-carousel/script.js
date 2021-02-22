@@ -20,12 +20,15 @@
     ];
 
     var button = document.getElementById("next");
+    var x = 1;
 
     button.onclick = function() {
-        var rand = Math.floor(Math.random()*5);
-        console.log(rand);
-
-        document.querySelector("img").src = gallery[rand];
+        console.log(x);
+        document.querySelector("img").src = gallery[x];
+        x++;
+        if (x==5) {
+            x=0;
+        }
 
     }
 
