@@ -19,12 +19,13 @@
         "../../_shared/img/map.svg",
     ];
 
-    var button = document.getElementById("next");
-    var x = 1;
+    const button = document.getElementById("next");
+    let x = 1;
+    let image = document.querySelector("img");
 
     button.onclick = function() {
         console.log(x);
-        document.querySelector("img").src = gallery[x];
+        image.src = gallery[x];
         x++;
         if (x==5) {
             x=0;

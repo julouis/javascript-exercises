@@ -11,6 +11,22 @@
 
 (function() {
 
+    const run = document.querySelector('#run');
+
+    run.onclick = function() {
+
+        let passOne = document.querySelector('#pass-one');
+        let passTwo = document.querySelector('#pass-two');
+
+        if (passOne.value === passTwo.value) {
+            passOne.style.borderColor="";
+            passTwo.style.borderColor="";
+        } else {
+            passOne.style.borderColor="red";
+            passTwo.style.borderColor="red";
+        }
+    }
+
     // your code here
 
 })();

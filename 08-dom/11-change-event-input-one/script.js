@@ -11,6 +11,18 @@
 
 (function() {
 
+    let counter = document.querySelector("#counter");
+    let passOne = document.querySelector("#pass-one");
+    passOne.setAttribute("maxlength","10");
+    passOne.value="";  // pour reset
+
+    passOne.addEventListener('input', function () {
+
+        counter.innerHTML=`${passOne.value.length}/10`
+
+    })
+
+
     // your code here
 
 })();

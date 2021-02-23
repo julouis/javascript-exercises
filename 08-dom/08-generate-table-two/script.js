@@ -9,8 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+	var target = document.getElementById("target");
+	target.innerHTML = "<table><tbody></tbody></table>";
 
-    // your code here
+	const table = document.querySelector("tbody");
+	var tableCode;
 
+	for (i = 0; i < 10; i++) {
+    
+		tableCode = "<tr>";
+        
+		for (x = 0; x < 10; x++) {
+			tableCode += `<td>${(x + 1) * (i + 1)}</td>`;
+      
+		}
+
+		tableCode += "</tr>";
+		table.innerHTML += tableCode;
+	}
+
+	// your code here
 })();
