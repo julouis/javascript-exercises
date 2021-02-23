@@ -11,6 +11,20 @@
 
 (function() {
 
+    let passOne = document.querySelector('#pass-one');
+    let validity = document.querySelector('#validity');
+    passOne.setAttribute("maxlength","8")
+    passOne.value="";
+
+    passOne.addEventListener('input', function() {
+
+        let numberOfDigits = passOne.value.replace(/[^0-9]/g,"").length;
+
+        if ((passOne.value.length == 8) && (numberOfDigits>=2)) {
+            validity.innerHTML = "Ok";
+        }
+    })
+
     // your code here
 
 })();
