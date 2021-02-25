@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+
+
+    document.getElementById("run").addEventListener("click",function(){
+    
+        window.lib.getPersons(function callBack(error, array) {
+            if (error){
+                console.error(error);
+            } else {
+                console.log(array);
+            }
+            
+            
+
+        })
+    
+
+
+    })
 })();

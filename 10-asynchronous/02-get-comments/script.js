@@ -10,5 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
+
+
+    document.getElementById('run').addEventListener('click',function(){
+
+        window.lib.getPosts(function targetPosts(error,array) {
+            array.forEach(function tagetComments(element) {
+                window.lib.getComments(element.id, function replace(error, comments) {
+                    element.comments = comments;
+                })
+            });
+            console.log(array);
+        })
+
+
+    })
+
     // your code here
 })();
