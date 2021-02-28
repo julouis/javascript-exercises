@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+	document
+		.getElementById("run")
+		.addEventListener("click", async function globalFunction() {
+			const getPersons = await window.lib.getPersons();
+			try {
+				console.log(getPersons);
+			} catch (error) {
+                console.log("11111111")
+				console.error(error);
+                console.log("too bad")
+			}
+		});
 })();
