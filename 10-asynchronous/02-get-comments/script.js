@@ -16,7 +16,7 @@
 
         window.lib.getPosts(function targetPosts(error,array) {
             array.forEach(function tagetComments(element) {
-                window.lib.getComments(element.id, function replace(error, comments) {
+                window.lib.getComments(element.id, function replace(comments) {
                     element.comments = comments;
                 })
             });

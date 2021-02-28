@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+
+        window.lib.getPosts().then(function targetPosts(error,array) {
+            
+            array.foreach(function targetComments(element) {
+
+                window.lib.getComments().then(element.id, function replace(comment) {
+
+                    element.comment = comment;
+                })
+            })
+            console.log(array)
+        })
+
+    })
 })();
